@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "helvetica";
+  src: url("../public/fonts/HelveticaNeueCyr-Thin.woff2");
+}
+@font-face {
+  font-family: "ppEditorialNew";
+  src: url("../public/fonts/pp-editoria-new-2.woff2");
+}
+@font-face {
+  font-family: "neueHaasDisplayRoman";
+  src: url("../public/fonts/NeueHaasDisplay-Roman.woff2");
+}
