@@ -6,7 +6,9 @@ module.exports = {
       fontFamily:{
        helvetica:["helvetica","sans-serif"],
        ppEditorialNew:["ppEditorialNew","serif"],
-       neueHaasDisplayRoman:["neueHaasDisplayRoman","sans-serif"]
+       neueHaasDisplayRoman:["neueHaasDisplayRoman","sans-serif"],
+       ppNeueMontrealBold:["ppNeueMontrealBold","sans-serif"],
+       ppNeueMontrealMedium:["ppNeueMontrealMedium","sans-serif"],
       },
       gridTemplateColumns:{
         '15': 'repeat(15, minmax(0, 1fr))',

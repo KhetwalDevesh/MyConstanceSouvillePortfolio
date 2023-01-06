@@ -14,3 +14,11 @@
   font-family: "neueHaasDisplayRoman";
   src: url("../public/fonts/NeueHaasDisplay-Roman.woff2");
 }
+@font-face {
+  font-family:"ppNeueMontrealBold" ;
+  src: url("../public/fonts/PPNeueMontreal-Bold.woff2");
+}
+@font-face {
+  font-family:"ppNeueMontrealMedium" ;
+  src: url("../public/fonts/PPNeueMontreal-Medium.woff2");
+}
