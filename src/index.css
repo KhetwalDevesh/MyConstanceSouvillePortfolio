@@ -22,3 +22,17 @@
   font-family:"ppNeueMontrealMedium" ;
   src: url("../public/fonts/PPNeueMontreal-Medium.woff2");
 }
+
+.card{
+  transition: all .4s cubic-bezier(.215,.61,.355,1);
+  
+}
+
+/* body{
+  cursor:url(assets/arrow-in-circle-figma.svg), auto;
+} */
+
+.svg-cursor:hover{
+  cursor:url(assets/arrow-in-circle-figma.svg), auto;
+  z-index: 100;
+}

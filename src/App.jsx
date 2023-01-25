@@ -42,37 +42,37 @@ function App() {
       <div className=' flex items-center justify-center  h-44 font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]'>Projects</div>
       </div>
       <div className='pt-[3vh] grid grid-cols-15 pb-[21vw]'>
-      <a href="" className='p-[20px] min-h-[16.8rem] col-start-1 col-span-6  rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end'>
+      <a href="" className='svg-cursor p-[20px] min-h-[16.8rem] col-start-1 col-span-6  rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end'>
         <div className='flex justify-between text-[40px]'>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>StalkTrendz</div>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>01</div>
         </div>
         </a>
-        <a href="" className='p-[20px] min-h-[16.8rem] col-start-7 col-span-6 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end'>
+        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-7 col-span-6 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end'>
         <div className='flex justify-between text-[40px]'>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>Utopia Farming</div>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>02</div>
         </div>
         </a>
-        <a href="" className='p-[20px] min-h-[16.8rem] col-start-1 col-span-9 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem] flex flex-col justify-end'>
+        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-1 col-span-9 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem] flex flex-col justify-end'>
         <div className='flex justify-between text-[40px]'>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>Creative Developer</div>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>03</div>
         </div>
         </a>
-        <a href="" className='p-[20px] min-h-[16.8rem] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]'>
+        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]'>
         <div  ></div>
         </a>
-        <a href="" className='p-[20px] min-h-[16.8rem] col-start-1 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]'>
+        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-1 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]'>
         <div  ></div>
         </a>
-        <a href="" className='p-[20px] min-h-[16.8rem] col-start-7 col-span-9 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem]'>
+        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-7 col-span-9 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem]'>
         <div  ></div>
         </a>
-        <a href="" className='p-[20px] min-h-[16.8rem] col-start-4 col-span-6 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem]'>
+        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-4 col-span-6 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem]'>
         <div  ></div>
         </a>
-        <a href="" className='p-[20px] min-h-[16.8rem] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem]'>
+        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem]'>
         <div  ></div>
         </a>
       </div>
@@ -86,15 +86,15 @@ function App() {
                 </div>
 
       <div className='pt-[3vh] grid grid-cols-15 pb-[18rem]'>
-      <a href="" className='min-h-[16.8rem] p-[20px] col-start-1 col-span-6 border-[1px] border-[#fbefdf]  rounded-br-[2.8rem]  h-[37.5rem] flex flex-col justify-between'>
+      <a href="" className='svg-cursor min-h-[16.8rem] p-[20px] col-start-1 col-span-6 border-[1px] border-[#fbefdf]  rounded-br-[2.8rem]  h-[37.5rem] flex flex-col justify-between'>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>Twitter</div>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>@khetwal_devesh</div>
         </a>
-        <a href="" className='min-h-[16.8rem] p-[20px] min-h-[16.8rem] col-start-7 col-span-6 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] flex flex-col justify-between'>
+        <a href="" className='svg-cursor min-h-[16.8rem] p-[20px] min-h-[16.8rem] col-start-7 col-span-6 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] flex flex-col justify-between'>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>LinkedIn</div>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>Devesh Khetwal</div>
         </a>
-        <a href="" className='min-h-[16.8rem] p-[20px] min-h-[16.8rem] col-start-1 col-span-9 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] flex flex-col justify-between'>
+        <a href="" className='svg-cursor min-h-[16.8rem] p-[20px] min-h-[16.8rem] col-start-1 col-span-9 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] flex flex-col justify-between'>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>Email</div>
         <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>deveshkhetwal05@gmail.com</div>
         </a>
