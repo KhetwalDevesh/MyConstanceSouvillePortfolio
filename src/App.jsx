@@ -1,109 +1,258 @@
-import { useState } from 'react'
-
+import { useEffect, useState } from "react";
+import Lenis from "@studio-freight/lenis";
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
+  const scrollToProjects = () => {
+    const projectsContainer = document.getElementById("projects-container");
+    projectsContainer.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+      inline: "start",
+    });
+  };
+
+  const scrollToContact = () => {
+    const contactContainer = document.getElementById("contact-container");
+    contactContainer.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+      inline: "start",
+    });
+  };
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 5,
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <div className="p-[21px] pb-24 bg-[#b2b2a8] top-0 h-full ">
-      <div className='bg-[#c1c0b6] rounded-[45px] h-full '>
-      <header className='p-[3vh] pt-[4vh] mb-[calc(16vh + 10px)] '>
-      <h1 className='m-0 text-[12rem] text-[#3f3b37] font-ppEditorialNew tracking-[-0.07em] leading-[.7] flex space-x-[24.5rem] '>
-      <span>Constance</span> <span>Souville</span>
-      </h1>
-      <div className='grid grid-cols-4 gap-[24rem] grid-flow-dense mt-[1.5rem] pt-[1.3rem] text-[11px] tracking-[.06em] leading-[1] font-[700] border-t-[1px] border-[#3f3b37] text-[#3f3b37]'>
-        <p>FRONT-END DEVELOPER</p>
-        <p>AVAILABLE FOR FREELANCE</p>
-        <p>EMAIL</p>
-        <p>
-          <span>MONTREAL</span>
-        </p>
-      </div>
-      </header>
-      <div className='pl-[3vh] pr-[3vh]  mt-[85px] '>
-        <div className='flex space-x-[360px] justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37] '>
-          <div className='h-[140px] w-80 rounded-br-[33px] bg-[#fbefdf] '></div>
-          <div className='font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]'>French</div>
-          <div className='h-[140px] w-80 rounded-br-[33px] bg-[#db4c44]'></div>
+      <div className="bg-[#c1c0b6] rounded-[45px] h-full ">
+        <header className="p-[3vh] pt-[4vh] mb-[calc(16vh + 10px)] w-500:pb-0 w-380:pt-[3vh] w-380:px-5">
+          <h1 className="w-380:text-[1.8rem] w-470:text-[2.2rem] w-500:text-[2.8rem] w-600:text-[3.2rem] w-800:text-[4rem] w-1050:text-[5.5rem] w-1200:text-[7rem] w-1500:text-[8rem] w-1670:text-[9rem] m-0 text-[11rem] text-[#3f3b37] font-PlayfairDisplayItalic tracking-[0.07em] leading-[.7] flex justify-around ">
+            <span>Devesh</span> <span>Khetwal</span>
+          </h1>
+          <div className="w-380:mt-[1rem] w-800:text-[8px] w-1200:text-[9px] flex justify-between  mt-[1.5rem] pt-[1.3rem] text-[11px] tracking-[.06em] leading-[1] font-[700] border-t-[1px] border-[#3f3b37] text-[#3f3b37]">
+            <p className="w-500:hidden">FULLSTACK DEVELOPER</p>
+            <p className="w-500:hidden">AVAILABLE FOR WORK</p>
+            <p className="w-500:hidden">EMAIL</p>
+            <p className="w-500:hidden">
+              <span>BAGESHWAR</span>
+            </p>
+          </div>
+        </header>
+        <div className="pl-[3vh] pr-[3vh]  mt-[85px] w-600:mt-[0px]">
+          <div className="w-380:h-10 w-470:h-16 w-600:h-20 w-600:justify-center flex justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37] ">
+            <a className="about-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1200:w-60 w-1200:h-[120px] w-1500:w-72 h-[140px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
+              <span>About</span>
+              <span>01</span>
+            </a>
+            <div className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
+              Indian
+            </div>
+            <button
+              onClick={scrollToProjects}
+              className="project-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1500:w-72 w-1200:w-60 w-1200:h-[120px] h-[140px] w-80 rounded-br-[33px] bg-[#db4c44] flex justify-between p-4 items-end font-neueHaasDisplayRoman text-white"
+            >
+              <span>Projects</span>
+              <span>02</span>
+            </button>
+          </div>
+          <div className="w-380:h-12 w-380:flex-row w-600:justify-evenly w-470:h-16 w-600:h-20  font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] flex  justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37]">
+            <span className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] tracking-[-.03em]">
+              Fullstack
+            </span>
+            <span className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] tracking-[-.03em]">
+              Developer
+            </span>
+          </div>
+          <div className="w-380:h-12 w-600:justify-evenly w-470:h-16 w-600:h-20 flex justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37]">
+            <div className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
+              Based
+            </div>
+            <button
+              onClick={scrollToContact}
+              className="contact-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1500:w-72 h-[140px] w-1200:w-60 w-1200:h-[120px] w-80  rounded-br-[33px] bg-[#e7aa2c]  flex justify-between p-4 items-end font-neueHaasDisplayRoman"
+            >
+              <span>Contact</span>
+              <span>03</span>
+            </button>
+            <div className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
+              in Delhi
+            </div>
+          </div>
         </div>
-        <div className='font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] flex  space-x-[520px] justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37]'>
-            <span className='tracking-[-.03em]'>Frontend</span>
-            <span className='tracking-[-.03em]'>Developer</span>
-        </div>
-        <div className='flex space-x-[185px]  justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37]'>
-        <div className='font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]'>Based</div>
-        <div className='h-[140px] w-80 rounded-br-[33px] bg-[#e7aa2c]'></div>
-          <div className='font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]'>in Montreal</div>
-        </div>
-      </div>
 
+        <div className="about-contact-project-cards hidden w-470:pb-0 w-600:flex flex-col items-center p-10 ">
+          <button className="about-card w-600:px-3 w-600:py-2 w-380:w-44 w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
+            <span>About</span>
+            <span>01</span>
+          </button>
 
-      <div className='mt-[85px] px-[3vh] pb-[3vh]'>
-      <div className=' h-44 border-b-[1px] border-[#3f3b37] flex items-center justify-center'>
-      <div className=' flex items-center justify-center  h-44 font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]'>Projects</div>
-      </div>
-      <div className='pt-[3vh] grid grid-cols-15 pb-[21vw]'>
-      <a href="" className='svg-cursor p-[20px] min-h-[16.8rem] col-start-1 col-span-6  rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end'>
-        <div className='flex justify-between text-[40px]'>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>StalkTrendz</div>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>01</div>
-        </div>
-        </a>
-        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-7 col-span-6 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end'>
-        <div className='flex justify-between text-[40px]'>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>Utopia Farming</div>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>02</div>
-        </div>
-        </a>
-        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-1 col-span-9 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem] flex flex-col justify-end'>
-        <div className='flex justify-between text-[40px]'>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>Creative Developer</div>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium '>03</div>
-        </div>
-        </a>
-        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]'>
-        <div  ></div>
-        </a>
-        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-1 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]'>
-        <div  ></div>
-        </a>
-        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-7 col-span-9 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem]'>
-        <div  ></div>
-        </a>
-        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-4 col-span-6 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem]'>
-        <div  ></div>
-        </a>
-        <a href="" className='svg-cursor card p-[20px] min-h-[16.8rem] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem]'>
-        <div  ></div>
-        </a>
-      </div>
-      </div>
+          <button
+            onClick={scrollToProjects}
+            className="project-card w-600:px-3 w-600:py-2 w-380:w-44  w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#db4c44] text-white flex justify-between p-4 items-end font-neueHaasDisplayRoman"
+          >
+            <span>Projects</span>
+            <span>02</span>
+          </button>
 
-      <div className='bg-[#3f3b37] h-full w-full rounded-[3.2rem] p-[3vh] pt-[8rem] '>
-                <div className='pl-52'>
-                  <p className='pl-40 pb-40 pr-40 text-[#fbefdf] text-[4rem] font-neueHaasDisplayRoman leading-none tracking-[.05em] '>I'm currently looking for a web development
-                   internship/job based on my skills. I am free and ready to join immediately. <br />Consider contacting me if you 
-                  are interested to interview me. </p>
+          <button
+            onClick={scrollToContact}
+            className="contact-card w-600:px-3 w-600:py-2 w-380:w-44  w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#e7aa2c] flex justify-between p-4 items-end font-neueHaasDisplayRoman"
+          >
+            <span>Contact</span>
+            <span>03</span>
+          </button>
+        </div>
+
+        <div
+          id="projects-container"
+          className="mt-[85px] px-[3vh] pb-[3vh] w-600:mt-[10px] w-380:mt-0"
+        >
+          <div className="w-470:h-32 h-44 border-b-[1px] border-[#3f3b37] flex items-center justify-center">
+            <div className="w-470:h-24 w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] flex items-center justify-center  h-44 font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
+              Projects
+            </div>
+          </div>
+          <div className="pt-[3vh] grid grid-cols-15 pb-[21vw] w-800:flex w-800:flex-col">
+            <a
+              href="https://stalktrendz-frontend.netlify.app/"
+              target="_blank"
+              className="w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-380:p-[15px] w-1050:h-[25rem] w-1200:h-[30rem] circle-cursor p-[20px]  col-start-1 col-span-6  rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end"
+            >
+              <div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
+                <div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
+                  StalkTrendz
                 </div>
+                <div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
+                  01
+                </div>
+              </div>
+            </a>
+            <a
+              href=""
+              id="circle-cursor"
+              className="card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-7 col-span-6 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end"
+            >
+              <div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
+                <div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
+                  Utopia Farming
+                </div>
+                <div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
+                  02
+                </div>
+              </div>
+            </a>
+            <a
+              href=""
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-1 col-span-9 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem] flex flex-col justify-end"
+            >
+              <div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
+                <div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
+                  Creative Developer
+                </div>
+                <div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
+                  03
+                </div>
+              </div>
+            </a>
+            <a
+              href=""
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]"
+            >
+              <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
+            </a>
+            <a
+              href=""
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-1 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]"
+            >
+              <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
+            </a>
+            <a
+              href=""
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-7 col-span-9 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem]"
+            >
+              <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
+            </a>
+            <a
+              href=""
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-4 col-span-6 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem]"
+            >
+              <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
+            </a>
+            <a
+              href=""
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem]"
+            >
+              <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
+            </a>
+          </div>
+        </div>
 
-      <div className='pt-[3vh] grid grid-cols-15 pb-[18rem]'>
-      <a href="" className='svg-cursor min-h-[16.8rem] p-[20px] col-start-1 col-span-6 border-[1px] border-[#fbefdf]  rounded-br-[2.8rem]  h-[37.5rem] flex flex-col justify-between'>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>Twitter</div>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>@khetwal_devesh</div>
-        </a>
-        <a href="" className='svg-cursor min-h-[16.8rem] p-[20px] min-h-[16.8rem] col-start-7 col-span-6 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] flex flex-col justify-between'>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>LinkedIn</div>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>Devesh Khetwal</div>
-        </a>
-        <a href="" className='svg-cursor min-h-[16.8rem] p-[20px] min-h-[16.8rem] col-start-1 col-span-9 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] flex flex-col justify-between'>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>Email</div>
-        <div className='text-[#fbefdf] font-ppNeueMontrealMedium text-[20px]'>deveshkhetwal05@gmail.com</div>
-        </a>
-      </div>
-        <a href="" className='text-[#fbefdf] text-[11px] font-ppNeueMontrealBold'>BACK TO THE TOP</a>
-      </div>
+        <div
+          id="contact-container"
+          className="bg-[#3f3b37] h-full w-full rounded-[3.2rem] p-[3vh] pt-[8rem] w-500:pt-28"
+        >
+          <div className="w-470:pl-0 pl-52 w-600:pl-10 w-800:pl-20 w-1050:pl-40">
+            <p className="w-380:text-[1.4rem] w-380:px-0 w-470:text-[1.8rem] w-500:pb-10 w-500:pr-8 w-800:text-[2rem] w-800:pr-24 w-800:pl-5 w-1050:text-[2.5rem] w-1200:text-[3rem] w-1500:text-[3.5rem] pl-40 w-1050:pl-20 pb-40 pr-40 text-[#fbefdf] text-[4rem] font-neueHaasDisplayRoman leading-none tracking-[.05em] ">
+              I'm currently looking for a web development internship/job based
+              on my skills. I am free and ready to join immediately. <br />
+              Consider contacting me if you are interested to interview me.{" "}
+            </p>
+          </div>
+
+          <div className="pt-[3vh] grid grid-cols-15 pb-[18rem] w-600:pb-[14rem] w-800:flex w-800:flex-col">
+            <a
+              href=""
+              className="circle-cursor w-380:h-[7rem] w-800:h-[10rem] w-1050:h-[25rem] p-[20px] w-800:p-[10px] col-start-1 col-span-6 border-[1px] border-[#fbefdf]  rounded-br-[2.8rem]  h-[37.5rem] w-1200:h-[30rem] flex flex-col justify-between"
+            >
+              <div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
+                Twitter
+              </div>
+              <div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
+                @khetwal_devesh
+              </div>
+            </a>
+            <a
+              href=""
+              className="circle-cursor w-380:h-[7rem] w-800:h-[10rem] w-1050:h-[25rem] p-[20px] w-800:p-[10px]  col-start-7 col-span-6 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] w-1200:h-[30rem] flex flex-col justify-between"
+            >
+              <div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
+                LinkedIn
+              </div>
+              <div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
+                Devesh Khetwal
+              </div>
+            </a>
+            <a
+              href=""
+              className="circle-cursor w-380:h-[7rem] w-800:h-[10rem] w-1050:h-[25rem]  p-[20px] w-800:p-[10px] col-start-1 col-span-9 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] w-1200:h-[30rem] flex flex-col justify-between"
+            >
+              <div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
+                Email
+              </div>
+              <div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
+                deveshkhetwal05@gmail.com
+              </div>
+            </a>
+          </div>
+          <a
+            href=""
+            className="text-[#fbefdf] text-[11px] font-ppNeueMontrealBold"
+          >
+            BACK TO THE TOP
+          </a>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
