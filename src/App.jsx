@@ -3,6 +3,24 @@ import Lenis from "@studio-freight/lenis";
 function App() {
   const [count, setCount] = useState(0);
 
+  const scrollToTop = () => {
+    const topContainer = document.getElementById("top-of-page");
+    topContainer.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+      inline: "start",
+    });
+  };
+
+  const scrollToAbout = () => {
+    const aboutContainer = document.getElementById("about-container");
+    aboutContainer.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+      inline: "start",
+    });
+  };
+
   const scrollToProjects = () => {
     const projectsContainer = document.getElementById("projects-container");
     projectsContainer.scrollIntoView({
@@ -32,10 +50,10 @@ function App() {
     requestAnimationFrame(raf);
   }, []);
   return (
-    <div className="p-[21px] pb-24 bg-[#b2b2a8] top-0 h-full ">
+    <div id="top-of-page" className="p-[21px] pb-24 bg-[#b2b2a8] top-0 h-full ">
       <div className="bg-[#c1c0b6] rounded-[45px] h-full ">
         <header className="p-[3vh] pt-[4vh] mb-[calc(16vh + 10px)] w-500:pb-0 w-380:pt-[3vh] w-380:px-5">
-          <h1 className="w-380:text-[1.8rem] w-470:text-[2.2rem] w-500:text-[2.8rem] w-600:text-[3.2rem] w-800:text-[4rem] w-1050:text-[5.5rem] w-1200:text-[7rem] w-1500:text-[8rem] w-1670:text-[9rem] m-0 text-[11rem] text-[#3f3b37] font-PlayfairDisplayItalic tracking-[0.07em] leading-[.7] flex justify-around ">
+          <h1 className="my-name w-380:text-[1.8rem] w-470:text-[2.2rem] w-500:text-[2.8rem] w-600:text-[3.2rem] w-800:text-[4rem] w-1050:text-[5.5rem] w-1200:text-[7rem] w-1500:text-[8rem] w-1670:text-[9rem] m-0 text-[11rem] text-[#3f3b37] font-PlayfairDisplayItalic tracking-[0.07em] leading-[.7] flex justify-around ">
             <span>Devesh</span> <span>Khetwal</span>
           </h1>
           <div className="w-380:mt-[1rem] w-800:text-[8px] w-1200:text-[9px] flex justify-between  mt-[1.5rem] pt-[1.3rem] text-[11px] tracking-[.06em] leading-[1] font-[700] border-t-[1px] border-[#3f3b37] text-[#3f3b37]">
@@ -49,10 +67,13 @@ function App() {
         </header>
         <div className="pl-[3vh] pr-[3vh]  mt-[85px] w-600:mt-[0px]">
           <div className="w-380:h-10 w-470:h-16 w-600:h-20 w-600:justify-center flex justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37] ">
-            <a className="about-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1200:w-60 w-1200:h-[120px] w-1500:w-72 h-[140px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
+            <button
+              onClick={scrollToAbout}
+              className="about-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1200:w-60 w-1200:h-[120px] w-1500:w-72 h-[140px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman"
+            >
               <span>About</span>
               <span>01</span>
-            </a>
+            </button>
             <div className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
               Indian
             </div>
@@ -90,7 +111,10 @@ function App() {
         </div>
 
         <div className="about-contact-project-cards hidden w-470:pb-0 w-600:flex flex-col items-center p-10 ">
-          <button className="about-card w-600:px-3 w-600:py-2 w-380:w-44 w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
+          <button
+            onClick={scrollToAbout}
+            className="about-card w-600:px-3 w-600:py-2 w-380:w-44 w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman"
+          >
             <span>About</span>
             <span>01</span>
           </button>
@@ -113,6 +137,24 @@ function App() {
         </div>
 
         <div
+          id="about-container"
+          className="about-container flex justify-center items-center p-48  pb-24 text-[8rem] w-380:px-8 w-380:text-[2.2rem] w-470:px-10 w-470:pb-16 w-470:text-[2.8rem] w-600:px-12 w-600:pt-24 w-600:text-[3rem] w-800:pb-20 w-800:text-[4rem] w-1050:text-[5rem] w-1050:px-16 w-1200:px-24 w-1500:text-[6rem] text-[#3f3b37] "
+        >
+          <span>
+            I craft the websites with great attention to details. I love working
+            on websites with smooth animation and beautiful layouts.{" "}
+            <a
+              href="https://drive.google.com/file/d/1kv2SpFXYHBH-lkfmRtRMYWHPGxSI0T3l/view"
+              className="text-blue-800"
+              target="_blank"
+            >
+              Here
+            </a>{" "}
+            is the link to my Resume.
+          </span>
+        </div>
+
+        <div
           id="projects-container"
           className="mt-[85px] px-[3vh] pb-[3vh] w-600:mt-[10px] w-380:mt-0"
         >
@@ -125,7 +167,7 @@ function App() {
             <a
               href="https://stalktrendz-frontend.netlify.app/"
               target="_blank"
-              className="w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-380:p-[15px] w-1050:h-[25rem] w-1200:h-[30rem] circle-cursor p-[20px]  col-start-1 col-span-6  rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end"
+              className="circle-cursor w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-380:p-[15px] w-1050:h-[25rem] w-1200:h-[30rem]  p-[20px]  col-start-1 col-span-6  rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end"
             >
               <div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
                 <div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
@@ -137,7 +179,8 @@ function App() {
               </div>
             </a>
             <a
-              href=""
+              href="https://utopia-farming-2d0b57.netlify.app/"
+              target="_blank"
               id="circle-cursor"
               className="card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-7 col-span-6 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end"
             >
@@ -151,7 +194,8 @@ function App() {
               </div>
             </a>
             <a
-              href=""
+              href="https://landing-page-creative-developer.netlify.app/"
+              target="_blank"
               className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-1 col-span-9 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem] flex flex-col justify-end"
             >
               <div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
@@ -164,32 +208,40 @@ function App() {
               </div>
             </a>
             <a
+              href="https://email-view-76f3de.netlify.app/"
+              target="_blank"
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem] flex flex-col justify-end"
+            >
+              <div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
+                <div className="text-[#3f3b37] font-ppNeueMontrealMedium ">
+                  Email View
+                </div>
+                <div className="text-[#3f3b37] font-ppNeueMontrealMedium ">
+                  04
+                </div>
+              </div>
+            </a>
+            <a
               href=""
-              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]"
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-1 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem] flex flex-col justify-end"
             >
               <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
             </a>
             <a
               href=""
-              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-1 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem]"
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-7 col-span-9 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end"
             >
               <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
             </a>
             <a
               href=""
-              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-7 col-span-9 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem]"
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-4 col-span-6 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem] flex flex-col justify-end"
             >
               <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
             </a>
             <a
               href=""
-              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-4 col-span-6 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem]"
-            >
-              <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
-            </a>
-            <a
-              href=""
-              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem]"
+              className="circle-cursor card w-380:p-[15px] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-10 col-span-6 rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end"
             >
               <div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
             </a>
@@ -210,7 +262,8 @@ function App() {
 
           <div className="pt-[3vh] grid grid-cols-15 pb-[18rem] w-600:pb-[14rem] w-800:flex w-800:flex-col">
             <a
-              href=""
+              href="https://twitter.com/khetwal_devesh"
+              target="_blank"
               className="circle-cursor w-380:h-[7rem] w-800:h-[10rem] w-1050:h-[25rem] p-[20px] w-800:p-[10px] col-start-1 col-span-6 border-[1px] border-[#fbefdf]  rounded-br-[2.8rem]  h-[37.5rem] w-1200:h-[30rem] flex flex-col justify-between"
             >
               <div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
@@ -221,7 +274,8 @@ function App() {
               </div>
             </a>
             <a
-              href=""
+              href="https://www.linkedin.com/in/devesh-khetwal-b1bb0a190/"
+              target="_blank"
               className="circle-cursor w-380:h-[7rem] w-800:h-[10rem] w-1050:h-[25rem] p-[20px] w-800:p-[10px]  col-start-7 col-span-6 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] w-1200:h-[30rem] flex flex-col justify-between"
             >
               <div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
@@ -232,7 +286,8 @@ function App() {
               </div>
             </a>
             <a
-              href=""
+              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTLpRGCXWFMMgngwdZMdBzVWMhmgpzvSrJgcQRnrCFNrcBxWDQTcbMCpkHGhsmPpFvNDZg"
+              target="_blank"
               className="circle-cursor w-380:h-[7rem] w-800:h-[10rem] w-1050:h-[25rem]  p-[20px] w-800:p-[10px] col-start-1 col-span-9 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] w-1200:h-[30rem] flex flex-col justify-between"
             >
               <div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
@@ -244,8 +299,8 @@ function App() {
             </a>
           </div>
           <a
-            href=""
-            className="text-[#fbefdf] text-[11px] font-ppNeueMontrealBold"
+            onClick={scrollToTop}
+            className="text-[#fbefdf] text-[11px] font-ppNeueMontrealBold cursor-pointer"
           >
             BACK TO THE TOP
           </a>
