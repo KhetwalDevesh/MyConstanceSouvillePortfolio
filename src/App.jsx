@@ -67,7 +67,7 @@ function App() {
 				transform: "none",
 			},
 			{
-				duration: 2,
+				duration: 1,
 				delay: 1,
 			}
 		);
