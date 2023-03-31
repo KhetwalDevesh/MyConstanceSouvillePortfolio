@@ -3,40 +3,40 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "helvetica";
-  src: url("../public/fonts/HelveticaNeueCyr-Thin.woff2");
+	font-family: "helvetica";
+	src: url("../public/fonts/HelveticaNeueCyr-Thin.woff2");
 }
 @font-face {
-  font-family: "ppEditorialNew";
-  src: url("../public/fonts/pp-editoria-new-2.woff2");
+	font-family: "ppEditorialNew";
+	src: url("../public/fonts/pp-editoria-new-2.woff2");
 }
 @font-face {
-  font-family: "EditorialNewLight";
-  src: url("../public/fonts/EditorialNew-Light.woff2");
+	font-family: "EditorialNewLight";
+	src: url("../public/fonts/EditorialNew-Light.woff2");
 }
 @font-face {
-  font-family: "neueHaasDisplayRoman";
-  src: url("../public/fonts/NeueHaasDisplay-Roman.woff2");
+	font-family: "neueHaasDisplayRoman";
+	src: url("../public/fonts/NeueHaasDisplay-Roman.woff2");
 }
 @font-face {
-  font-family: "ppNeueMontrealBold";
-  src: url("../public/fonts/PPNeueMontreal-Bold.woff2");
+	font-family: "ppNeueMontrealBold";
+	src: url("../public/fonts/PPNeueMontreal-Bold.woff2");
 }
 @font-face {
-  font-family: "ppNeueMontrealMedium";
-  src: url("../public/fonts/PPNeueMontreal-Medium.woff2");
+	font-family: "ppNeueMontrealMedium";
+	src: url("../public/fonts/PPNeueMontreal-Medium.woff2");
 }
 @font-face {
-  font-family: "AnandaBlackRegularCursive";
-  src: url("../public/fonts/AnandaBlackPersonalUseRegular-cursive-woff2.woff2");
+	font-family: "AnandaBlackRegularCursive";
+	src: url("../public/fonts/AnandaBlackPersonalUseRegular-cursive-woff2.woff2");
 }
 @font-face {
-  font-family: "PlayfairDisplayItalic";
-  src: url("../public/fonts/PlayfairDisplayItalicWoff2.woff2");
+	font-family: "PlayfairDisplayItalic";
+	src: url("../public/fonts/PlayfairDisplayItalicWoff2.woff2");
 }
 
 .about-container {
-  font-family: "Tangerine", cursive;
+	font-family: "Tangerine", cursive;
 }
 
 /* .my-name {
@@ -44,21 +44,21 @@
 } */
 
 html {
-  scroll-behavior: initial;
+	scroll-behavior: initial;
 }
 
 html,
 body {
-  min-height: 100%;
-  height: auto;
+	min-height: 100%;
+	height: auto;
 }
 
 *::-webkit-scrollbar {
-  width: 0px;
+	width: 0px;
 }
 
 .card {
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 /* body{
@@ -66,39 +66,43 @@ body {
 } */
 
 .svg-cursor:hover {
-  cursor: url(assets/rainbow.svg), auto;
-  z-index: 100;
+	cursor: url(assets/rainbow.svg), auto;
+	z-index: 100;
 }
 
 .about-card,
 .project-card,
 .contact-card {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
 }
 
 .about-card::after,
 .project-card::after,
 .contact-card::after {
-  content: "";
-  height: 140px;
-  width: 320px;
-  background-color: #3f3b37;
-  position: absolute;
-  left: 0px;
-  top: 100%;
-  transition: top 0.5s;
+	content: "";
+	height: 140px;
+	width: 320px;
+	background-color: #3f3b37;
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	transition: top 0.5s;
 }
 .about-card:hover,
 .contact-card:hover {
-  color: white;
+	color: white;
 }
 .about-card:hover::after,
 .project-card:hover::after,
 .contact-card:hover::after {
-  top: 0;
+	top: 0;
 }
 span {
-  z-index: 2;
+	z-index: 2;
+}
+
+.project {
+	transition: opacity 2s, transform 4s;
 }
