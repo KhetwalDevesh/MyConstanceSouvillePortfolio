@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Lenis from "@studio-freight/lenis";
+import { animate, inView } from "motion";
 function App() {
 	const [count, setCount] = useState(0);
 
@@ -49,82 +50,106 @@ function App() {
 		}
 		requestAnimationFrame(raf);
 	}, []);
+
+	useEffect(() => {
+		animate(
+			document.querySelectorAll(".animate-text"),
+			{
+				transform: "none",
+			},
+			{
+				duration: 2,
+			}
+		);
+		animate(
+			document.querySelectorAll(".animate-card"),
+			{
+				transform: "none",
+			},
+			{
+				duration: 2,
+				delay: 1,
+			}
+		);
+	}, []);
+
 	return (
 		<div id="top-of-page" className="p-[21px] pb-24 bg-[#b2b2a8] top-0 h-full ">
 			<div className="bg-[#c1c0b6] rounded-[45px] h-full ">
-				<header className="p-[3vh] pt-[4vh] mb-[calc(16vh + 10px)] w-500:pb-0 w-380:pt-[3vh] w-380:px-5">
-					<h1 className="my-name w-380:text-[1.8rem] w-470:text-[2.2rem] w-500:text-[2.8rem] w-600:text-[3.2rem] w-800:text-[4rem] w-1050:text-[5.5rem] w-1200:text-[7rem] w-1500:text-[8rem] w-1670:text-[9rem] m-0 text-[11rem] text-[#3f3b37] font-PlayfairDisplayItalic tracking-[0.07em] leading-[.7] flex justify-around ">
-						<span>Devesh</span> <span>Khetwal</span>
-					</h1>
-					<div className="w-380:mt-[1rem] w-800:text-[8px] w-1200:text-[9px] flex justify-between  mt-[1.5rem] pt-[1.3rem] text-[11px] tracking-[.06em] leading-[1] font-[700] border-t-[1px] border-[#3f3b37] text-[#3f3b37]">
-						<p className="w-500:hidden">FULLSTACK DEVELOPER</p>
-						<p className="w-500:hidden">AVAILABLE FOR WORK</p>
-						<p className="w-500:hidden">EMAIL</p>
-						<p className="w-500:hidden">
+				<header className="flex flex-col gap-2 p-[3vh] pt-[4vh] mb-[calc(16vh + 10px)] w-500:pb-0 w-380:pt-[3vh] w-380:px-5">
+					<div className="my-name overflow-hidden h-fit py-3 w-380:text-[1.8rem]  w-470:text-[2.2rem] w-500:text-[2.8rem] w-600:text-[3.2rem] w-800:text-[4rem] w-1050:text-[5.5rem] w-1200:text-[7rem] w-1500:text-[8rem] w-1670:text-[9rem] m-0 text-[11rem] text-[#3f3b37] font-PlayfairDisplayItalic tracking-[0.07em] leading-[.7] flex justify-around ">
+						<span className="animate-text">Devesh</span>{" "}
+						<span className="animate-text">Khetwal</span>
+					</div>
+					<div className="w-380:mt-[0.5rem] w-800:text-[8px] w-1200:text-[9px] flex justify-between  mt-[1.5rem] pt-[1.3rem] text-[11px] tracking-[.06em] leading-[1] font-[700] border-t-[1px] border-[#3f3b37] text-[#3f3b37]">
+						<p className="w-500:hidden ">FULLSTACK DEVELOPER</p>
+						<p className="w-500:hidden ">AVAILABLE FOR WORK</p>
+						<p className="w-500:hidden ">EMAIL</p>
+						<p className="w-500:hidden ">
 							<span>BAGESHWAR</span>
 						</p>
 					</div>
 				</header>
 				<div className="pl-[3vh] pr-[3vh]  mt-[85px] w-600:mt-[0px]">
-					<div className="w-380:h-10 w-470:h-16 w-600:h-20 w-600:justify-center flex justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37] ">
+					<div className="overflow-hidden w-380:h-10 w-470:h-16 w-600:h-20 w-600:justify-center flex justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37] ">
 						<button
 							onClick={scrollToAbout}
-							className="about-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1200:w-60 w-1200:h-[120px] w-1500:w-72 h-[140px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
+							className="animate-card about-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1200:w-60 w-1200:h-[120px] w-1500:w-72 h-[140px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
 							<span>About</span>
 							<span>01</span>
 						</button>
-						<div className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
+						<div className="animate-text w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
 							Indian
 						</div>
 						<button
 							onClick={scrollToProjects}
-							className="project-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1500:w-72 w-1200:w-60 w-1200:h-[120px] h-[140px] w-80 rounded-br-[33px] bg-[#db4c44] flex justify-between p-4 items-end font-neueHaasDisplayRoman text-white">
+							className="animate-card project-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1500:w-72 w-1200:w-60 w-1200:h-[120px] h-[140px] w-80 rounded-br-[33px] bg-[#db4c44] flex justify-between p-4 items-end font-neueHaasDisplayRoman text-white">
 							<span>Projects</span>
 							<span>02</span>
 						</button>
 					</div>
-					<div className="w-380:h-12 w-380:flex-row w-600:justify-evenly w-470:h-16 w-600:h-20  font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] flex  justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37]">
-						<span className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] tracking-[-.03em]">
+					<div className="overflow-hidden w-380:h-12 w-380:flex-row w-600:justify-evenly w-470:h-16 w-600:h-20  font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] flex  justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37]">
+						<span className="animate-text w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] tracking-[-.03em]">
 							Fullstack
 						</span>
-						<span className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] tracking-[-.03em]">
+						<span className="animate-text w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] tracking-[-.03em]">
 							Developer
 						</span>
 					</div>
-					<div className="w-380:h-12 w-600:justify-evenly w-470:h-16 w-600:h-20 flex justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37]">
-						<div className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
+					<div className="overflow-hidden w-380:h-12 w-600:justify-evenly w-470:h-16 w-600:h-20 flex justify-between justify-self-stretch items-center h-44 border-b-[1px] border-[#3f3b37]">
+						<div className="animate-text w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
 							Based
 						</div>
 						<button
 							onClick={scrollToContact}
-							className="contact-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1500:w-72 h-[140px] w-1200:w-60 w-1200:h-[120px] w-80  rounded-br-[33px] bg-[#e7aa2c]  flex justify-between p-4 items-end font-neueHaasDisplayRoman">
+							className="animate-card contact-card w-600:hidden w-800:w-36 w-800:h-[70px] w-800:rounded-br-[20px] w-800:text-[11px] w-800:p-2 w-1050:w-52 w-1050:h-[100px] w-1200:text-[13px] w-1500:w-72 h-[140px] w-1200:w-60 w-1200:h-[120px] w-80  rounded-br-[33px] bg-[#e7aa2c]  flex justify-between p-4 items-end font-neueHaasDisplayRoman">
 							<span>Contact</span>
 							<span>03</span>
 						</button>
-						<div className="w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
+						<div className="animate-text w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
 							in Delhi
 						</div>
 					</div>
 				</div>
 
-				<div className="about-contact-project-cards hidden w-470:pb-0 w-600:flex flex-col items-center p-10 ">
+				<div className="about-contact-project-cards overflow-hidden hidden w-470:pb-0 w-600:flex flex-col items-center p-10 ">
 					<button
 						onClick={scrollToAbout}
-						className="about-card w-600:px-3 w-600:py-2 w-380:w-44 w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
+						className="about-card animate-card2 w-600:px-3 w-600:py-2 w-380:w-44 w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#fbefdf] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
 						<span>About</span>
 						<span>01</span>
 					</button>
 
 					<button
 						onClick={scrollToProjects}
-						className="project-card w-600:px-3 w-600:py-2 w-380:w-44  w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#db4c44] text-white flex justify-between p-4 items-end font-neueHaasDisplayRoman">
+						className="project-card animate-card2 w-600:px-3 w-600:py-2 w-380:w-44  w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#db4c44] text-white flex justify-between p-4 items-end font-neueHaasDisplayRoman">
 						<span>Projects</span>
 						<span>02</span>
 					</button>
 
 					<button
 						onClick={scrollToContact}
-						className="contact-card w-600:px-3 w-600:py-2 w-380:w-44  w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#e7aa2c] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
+						className="contact-card animate-card2 w-600:px-3 w-600:py-2 w-380:w-44  w-380:h-[70px] w-470:w-60 w-600:rounded-br-[20px] w-470:text-[13px] h-[90px] w-80 rounded-br-[33px] bg-[#e7aa2c] flex justify-between p-4 items-end font-neueHaasDisplayRoman">
 						<span>Contact</span>
 						<span>03</span>
 					</button>
