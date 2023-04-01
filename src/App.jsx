@@ -80,7 +80,7 @@ function App() {
 				},
 				{
 					duration: 2,
-					delay: 1,
+					delay: 2,
 				}
 			);
 		});
