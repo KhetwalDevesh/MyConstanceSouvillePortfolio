@@ -71,6 +71,19 @@ function App() {
 				delay: 1,
 			}
 		);
+		inView(document.querySelector(".about-container"), () => {
+			animate(
+				document.querySelectorAll(".about"),
+				{
+					transform: "none",
+					opacity: 1,
+				},
+				{
+					duration: 2,
+					delay: 1,
+				}
+			);
+		});
 	}, []);
 
 	return (
@@ -157,8 +170,8 @@ function App() {
 
 				<div
 					id="about-container"
-					className="about-container flex justify-center items-center p-48  pb-24 text-[8rem] w-380:px-8 w-380:text-[2.2rem] w-470:px-10 w-470:pb-16 w-470:text-[2.8rem] w-600:px-12 w-600:pt-24 w-600:text-[3rem] w-800:pb-20 w-800:text-[4rem] w-1050:text-[5rem] w-1050:px-16 w-1200:px-24 w-1500:text-[6rem] text-[#3f3b37] ">
-					<span>
+					className="about-container overflow-hidden flex justify-center items-center p-48  pb-24 text-[8rem] w-380:px-8 w-380:text-[2.2rem] w-470:px-10 w-470:pb-16 w-470:text-[2.8rem] w-600:px-12 w-600:pt-24 w-600:text-[3rem] w-800:pb-20 w-800:text-[4rem] w-1050:text-[5rem] w-1050:px-16 w-1200:px-24 w-1500:text-[6rem] text-[#3f3b37] ">
+					<span className="about opacity-0 ">
 						I craft the websites with great attention to details. I love working
 						on websites with smooth animation and beautiful layouts.{" "}
 						<a
@@ -175,7 +188,7 @@ function App() {
 					id="projects-container"
 					className="mt-[85px] px-[3vh] pb-[3vh] w-600:mt-[10px] w-380:mt-0">
 					<div className="w-470:h-32 h-44 border-b-[1px] border-[#3f3b37] flex items-center justify-center">
-						<div className="w-470:h-24 w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] flex items-center justify-center  h-44 font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
+						<div className="project-heading relative w-470:h-24 w-380:text-[1.5rem] w-470:text-[2rem] w-600:text-[2.5rem] w-800:text-[3.5rem] w-1050:text-[5rem] w-1200:text-[6rem] w-1500:text-[7rem] w-1670:text-[8rem] flex items-center justify-center  h-44 font-neueHaasDisplayRoman text-[10rem] text-[#3f3b37] tracking-[-.03em]">
 							Projects
 						</div>
 					</div>

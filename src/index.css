@@ -119,3 +119,6 @@ span {
 .animate-card {
 	transform: translateY(400px);
 }
+.about {
+	transform: translateY(300px);
+}
