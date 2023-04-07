@@ -99,7 +99,7 @@ function App() {
 						<p className="w-500:hidden ">AVAILABLE FOR WORK</p>
 						<p className="w-500:hidden ">EMAIL</p>
 						<p className="w-500:hidden ">
-							<span>BAGESHWAR</span>
+							<span>DELHI</span>
 						</p>
 					</div>
 				</header>
@@ -195,7 +195,7 @@ function App() {
 					<div className="pt-[3vh] grid grid-cols-15 pb-[21vw] w-800:flex w-800:flex-col">
 						<div className="relative col-start-1 col-span-6 rounded-br-[2.8rem] overflow-hidden w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem]  w-1050:h-[25rem] w-1200:h-[30rem] h-[37.5rem]">
 							<a
-								href="https://stalktrendz-frontend.netlify.app/"
+								href="https://dirt-shop-ecom.netlify.app/"
 								target="_blank"
 								onMouseEnter={() => {
 									const projectClass1 = document.querySelector(".project-1");
@@ -214,7 +214,7 @@ function App() {
 								className="absolute project project-1 w-[100%] z-10 w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem]  w-1050:h-[25rem] w-1200:h-[30rem]  p-[20px]    rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end">
 								<div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
 									<div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
-										StalkTrendz
+										dirt-shop
 									</div>
 									<div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
 										01
@@ -222,11 +222,11 @@ function App() {
 								</div>
 							</a>
 							<a
-								href="https://stalktrendz-frontend.netlify.app/"
+								href="https://dirt-shop-ecom.netlify.app/"
 								target="_blank"
 								className="circle-cursor  absolute w-[100%] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col ">
 								<img
-									src="https://res.cloudinary.com/dikpmkuiw/image/upload/v1680237440/stalktrendz-thumb_monvge.png"
+									src="https://res.cloudinary.com/dikpmkuiw/image/upload/v1680885185/dirt-shop-thumb_lo7dbx.png"
 									className="project-1-image project h-full w-380:rounded-br-[1.5rem] rounded-br-[2.8rem]"
 								/>
 							</a>
@@ -273,7 +273,7 @@ function App() {
 
 						<div className="relative col-start-1 col-span-9 rounded-br-[2.8rem] overflow-hidden w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem]  w-1050:h-[25rem] w-1200:h-[30rem] h-[37.5rem]">
 							<a
-								href="https://landing-page-creative-developer.netlify.app/"
+								href="https://stalktrendz-frontend.netlify.app/"
 								target="_blank"
 								onMouseEnter={() => {
 									const projectClass3 = document.querySelector(".project-3");
@@ -292,7 +292,7 @@ function App() {
 								className="absolute project project-3 w-[100%] z-10  w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px]  rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem] flex flex-col justify-end">
 								<div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
 									<div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
-										Creative Developer
+										StalkTrendz
 									</div>
 									<div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
 										03
@@ -300,11 +300,11 @@ function App() {
 								</div>
 							</a>
 							<a
-								href="https://landing-page-creative-developer.netlify.app/"
+								href="https://stalktrendz-frontend.netlify.app/"
 								target="_blank"
 								className="circle-cursor  absolute w-[100%] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col ">
 								<img
-									src="https://res.cloudinary.com/dikpmkuiw/image/upload/v1680237473/creative-dev-thumb_n8z3el.png"
+									src="https://res.cloudinary.com/dikpmkuiw/image/upload/v1680237440/stalktrendz-thumb_monvge.png"
 									className="project-3-image project h-full w-380:rounded-br-[1.5rem] rounded-br-[2.8rem]"
 								/>
 							</a>
@@ -348,16 +348,52 @@ function App() {
 								/>
 							</a>
 						</div>
-						<a
-							href=""
-							className="circle-cursor card  w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-1 col-span-6 rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem] flex flex-col justify-end">
-							<div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
-						</a>
+
+						<div className="relative col-start-1 col-span-6 rounded-br-[2.8rem] overflow-hidden w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem]  w-1050:h-[25rem] w-1200:h-[30rem] h-[37.5rem]">
+							<a
+								href="https://landing-page-creative-developer.netlify.app/"
+								target="_blank"
+								onMouseEnter={() => {
+									const projectClass5 = document.querySelector(".project-5");
+									const projectImage5 =
+										document.querySelector(".project-5-image");
+									projectClass5.style.opacity = 0;
+									projectImage5.style.transform = "scale(1.2)";
+								}}
+								onMouseLeave={() => {
+									const projectClass5 = document.querySelector(".project-5");
+									const projectImage5 =
+										document.querySelector(".project-5-image");
+									projectClass5.style.opacity = 1;
+									projectImage5.style.transform = "none";
+								}}
+								className="absolute project project-5 w-[100%] z-10  w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px]  rounded-br-[2.8rem] bg-[#fbefdf] h-[37.5rem] flex flex-col justify-end">
+								<div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
+									<div className="text-[#3f3b37] font-ppNeueMontrealMedium ">
+										Creative Developer
+									</div>
+									<div className="text-[#3f3b37] font-ppNeueMontrealMedium ">
+										05
+									</div>
+								</div>
+							</a>
+							<a
+								href="https://landing-page-creative-developer.netlify.app/"
+								target="_blank"
+								className="circle-cursor  absolute w-[100%] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col ">
+								<img
+									src="https://res.cloudinary.com/dikpmkuiw/image/upload/v1680237473/creative-dev-thumb_n8z3el.png"
+									className="project-5-image project h-full w-380:rounded-br-[1.5rem] rounded-br-[2.8rem]"
+								/>
+							</a>
+						</div>
+
 						<a
 							href=""
 							className="circle-cursor card  w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-7 col-span-9 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end">
 							<div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
 						</a>
+
 						<a
 							href=""
 							className="circle-cursor card  w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-4 col-span-6 rounded-br-[2.8rem] bg-[#db4c44] h-[37.5rem] flex flex-col justify-end">
