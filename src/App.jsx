@@ -234,7 +234,7 @@ function App() {
 
 						<div className="relative col-start-7 col-span-6 rounded-br-[2.8rem] overflow-hidden w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem]  w-1050:h-[25rem] w-1200:h-[30rem] h-[37.5rem]">
 							<a
-								href="https://utopia-farming-2d0b57.netlify.app/"
+								href="https://twitter-clone-6bzqpljy4-khetwaldevesh.vercel.app/"
 								target="_blank"
 								onMouseEnter={() => {
 									const projectClass2 = document.querySelector(".project-2");
@@ -253,7 +253,7 @@ function App() {
 								className="absolute project project-2 w-[100%] z-10 w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem]  w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-7 col-span-6 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end">
 								<div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
 									<div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
-										Utopia Farming
+										twitter-clone
 									</div>
 									<div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
 										02
@@ -261,11 +261,11 @@ function App() {
 								</div>
 							</a>
 							<a
-								href="https://utopia-farming-2d0b57.netlify.app/"
+								href="https://twitter-clone-6bzqpljy4-khetwaldevesh.vercel.app/"
 								target="_blank"
 								className="circle-cursor  absolute w-[100%] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col ">
 								<img
-									src="https://res.cloudinary.com/dikpmkuiw/image/upload/v1680237456/utopia-farm-thumb_vs5lzx.png"
+									src="https://res.cloudinary.com/dikpmkuiw/image/upload/v1682609388/twitter-clone-thumb-2_l1qrqv.png"
 									className="project-2-image project h-full w-380:rounded-br-[1.5rem] rounded-br-[2.8rem]"
 								/>
 							</a>
@@ -388,11 +388,44 @@ function App() {
 							</a>
 						</div>
 
-						<a
-							href=""
-							className="circle-cursor card  w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px] col-start-7 col-span-9 rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end">
-							<div className="w-1200:text-[30px] w-800:text-[20px] w-380:text-[16px]"></div>
-						</a>
+						<div className="relative col-start-7 col-span-9 rounded-br-[2.8rem] overflow-hidden w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] h-[37.5rem]">
+							<a
+								href="https://utopia-farming-2d0b57.netlify.app/"
+								target="_blank"
+								onMouseEnter={() => {
+									const projectClass5 = document.querySelector(".project-6");
+									const projectImage5 =
+										document.querySelector(".project-6-image");
+									projectClass5.style.opacity = 0;
+									projectImage5.style.transform = "scale(1.2)";
+								}}
+								onMouseLeave={() => {
+									const projectClass5 = document.querySelector(".project-6");
+									const projectImage5 =
+										document.querySelector(".project-6-image");
+									projectClass5.style.opacity = 1;
+									projectImage5.style.transform = "none";
+								}}
+								className="absolute project project-6 w-[100%] z-10  w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] p-[20px]  rounded-br-[2.8rem] bg-[#e7aa2c] h-[37.5rem] flex flex-col justify-end">
+								<div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
+									<div className="text-[#3f3b37] font-ppNeueMontrealMedium ">
+										Utopia Farming
+									</div>
+									<div className="text-[#3f3b37] font-ppNeueMontrealMedium ">
+										06
+									</div>
+								</div>
+							</a>
+							<a
+								href="https://utopia-farming-2d0b57.netlify.app/"
+								target="_blank"
+								className="circle-cursor  absolute w-[100%] w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem] w-1050:h-[25rem] w-1200:h-[30rem] rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col ">
+								<img
+									src="https://res.cloudinary.com/dikpmkuiw/image/upload/v1680237456/utopia-farm-thumb_vs5lzx.png"
+									className="project-6-image project h-full w-380:rounded-br-[1.5rem] rounded-br-[2.8rem]"
+								/>
+							</a>
+						</div>
 
 						<a
 							href=""
