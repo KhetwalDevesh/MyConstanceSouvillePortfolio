@@ -90,14 +90,19 @@ function App() {
 		<div id="top-of-page" className="p-[21px] pb-24 bg-[#b2b2a8] top-0 h-full ">
 			<div className="bg-[#c1c0b6] rounded-[45px] h-full ">
 				<header className="flex flex-col gap-2 p-[3vh] pt-[4vh] mb-[calc(16vh + 10px)] w-500:pb-0 w-380:pt-[3vh] w-380:px-5">
-					<div className="my-name overflow-hidden h-fit py-3 w-380:text-[1.8rem]  w-470:text-[2.2rem] w-500:text-[2.8rem] w-600:text-[3.2rem] w-800:text-[4rem] w-1050:text-[5.5rem] w-1200:text-[7rem] w-1500:text-[8rem] w-1670:text-[9rem] m-0 text-[11rem] text-[#3f3b37] font-PlayfairDisplayItalic tracking-[0.07em] leading-[.7] flex justify-around ">
+					<div className="my-name overflow-hidden h-fit py-3 w-380:text-[1.8rem]  w-470:text-[2.2rem] w-500:text-[2.8rem] w-600:text-[3.2rem] w-800:text-[4rem] w-1050:text-[5.5rem] w-1200:text-[7rem] w-1500:text-[8rem] w-1670:text-[9rem] m-0 text-[11rem] text-[#3f3b37] font-neueHaasDisplayRoman  leading-[.7] flex justify-around ">
 						<span className="animate-text">Devesh</span>{" "}
 						<span className="animate-text">Khetwal</span>
 					</div>
 					<div className="w-380:mt-[0.5rem] w-800:text-[8px] w-1200:text-[9px] flex justify-between  mt-[1.5rem] pt-[1.3rem] text-[11px] tracking-[.06em] leading-[1] font-[700] border-t-[1px] border-[#3f3b37] text-[#3f3b37]">
 						<p className="w-500:hidden ">FULLSTACK DEVELOPER</p>
 						<p className="w-500:hidden ">AVAILABLE FOR WORK</p>
-						<p className="w-500:hidden ">EMAIL</p>
+						<a
+							target="_blank"
+							href="mailto:deveshkhetwal05@gmail.com"
+							className="w-500:hidden ">
+							EMAIL
+						</a>
 						<p className="w-500:hidden ">
 							<span>DELHI</span>
 						</p>
@@ -170,12 +175,12 @@ function App() {
 
 				<div
 					id="about-container"
-					className="about-container overflow-hidden flex justify-center items-center p-48  pb-24 text-[8rem] w-380:px-8 w-380:text-[2.2rem] w-470:px-10 w-470:pb-16 w-470:text-[2.8rem] w-600:px-12 w-600:pt-24 w-600:text-[3rem] w-800:pb-20 w-800:text-[4rem] w-1050:text-[5rem] w-1050:px-16 w-1200:px-24 w-1500:text-[6rem] text-[#3f3b37] ">
+					className="about-container overflow-hidden flex justify-center items-center p-80 pt-60 pb-24 text-[4rem]  w-470:pb-16  w-600:pt-24 w-800:pb-20 w-1500:px-60 w-1200:px-52 w-1050:px-40 w-800:px-32 w-600:px-20 w-800:py-32 w-470:px-12 w-380:px-10 text-[#3f3b37] w-380:text-[1.4rem] w-470:text-[1.8rem] w-800:text-[2rem] w-1050:text-[2.5rem] w-1200:text-[3rem] w-1500:text-[3.5rem] font-neueHaasDisplayRoman tracking-[.05em]">
 					<span className="about opacity-0 ">
 						I craft the websites with great attention to details. I love working
 						on websites with smooth animation and beautiful layouts.{" "}
 						<a
-							href="https://drive.google.com/file/d/1EPY4PSfsz3AWdQdjCJ6XrairRgWEAStH/view"
+							href="https://drive.google.com/file/d/12pfuRdvIAurElXO8dG_yiULQOhq5FvXP/view?usp=sharing"
 							className="text-blue-800"
 							target="_blank">
 							Here
@@ -475,7 +480,7 @@ function App() {
 							</div>
 						</a>
 						<a
-							href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTLpRGCXWFMMgngwdZMdBzVWMhmgpzvSrJgcQRnrCFNrcBxWDQTcbMCpkHGhsmPpFvNDZg"
+							href="mailto:deveshkhetwal05@gmail.com"
 							target="_blank"
 							className="circle-cursor w-380:h-[7rem] w-800:h-[10rem] w-1050:h-[25rem]  p-[20px] w-800:p-[10px] col-start-1 col-span-9 border-[1px] border-[#fbefdf] rounded-br-[2.8rem]  h-[37.5rem] w-1200:h-[30rem] flex flex-col justify-between">
 							<div className="text-[#fbefdf] font-ppNeueMontrealMedium text-[20px] w-800:text-[13px] w-1050:text-[15px]">
