@@ -202,20 +202,20 @@ function App() {
 							<a
 								href="https://dirt-shop-ecom.netlify.app/"
 								target="_blank"
-								// onMouseEnter={() => {
-								// 	const projectClass1 = document.querySelector(".project-1");
-								// 	const projectImage1 =
-								// 		document.querySelector(".project-1-image");
-								// 	projectClass1.style.opacity = 0;
-								// 	projectImage1.style.transform = "scale(1.2)";
-								// }}
-								// onMouseLeave={() => {
-								// 	const projectClass1 = document.querySelector(".project-1");
-								// 	const projectImage1 =
-								// 		document.querySelector(".project-1-image");
-								// 	projectClass1.style.opacity = 1;
-								// 	projectImage1.style.transform = "none";
-								// }}
+								onMouseEnter={() => {
+									const projectClass1 = document.querySelector(".project-1");
+									const projectImage1 =
+										document.querySelector(".project-1-image");
+									projectClass1.style.opacity = 0;
+									projectImage1.style.transform = "scale(1.2)";
+								}}
+								onMouseLeave={() => {
+									const projectClass1 = document.querySelector(".project-1");
+									const projectImage1 =
+										document.querySelector(".project-1-image");
+									projectClass1.style.opacity = 1;
+									projectImage1.style.transform = "none";
+								}}
 								className="absolute project project-1 w-[100%] z-10 w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem]  w-1050:h-[25rem] w-1200:h-[30rem]  p-[20px]    rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end">
 								<div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
 									<div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
