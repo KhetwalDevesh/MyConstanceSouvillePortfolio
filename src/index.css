@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kumar+One&display=swap");
+
 @font-face {
 	font-family: "helvetica";
 	src: url("../public/fonts/HelveticaNeueCyr-Thin.woff2");
@@ -33,6 +37,40 @@
 @font-face {
 	font-family: "PlayfairDisplayItalic";
 	src: url("../public/fonts/PlayfairDisplayItalicWoff2.woff2");
+}
+@font-face {
+	font-family: "MelodramaBold";
+	src: url("../public/fonts/Melodrama-Bold.woff2");
+}
+
+@font-face {
+	font-family: "MelodramaLight";
+	src: url("../public/fonts/Melodrama-Light.woff2");
+}
+
+@font-face {
+	font-family: "MelodramaMedium";
+	src: url("../public/fonts/Melodrama-Medium.woff2");
+}
+
+@font-face {
+	font-family: "MelodramaRegular";
+	src: url("../public/fonts/Melodrama-Regular.woff2");
+}
+
+@font-face {
+	font-family: "MelodramaSemibold";
+	src: url("../public/fonts/Melodrama-Semibold.woff2");
+}
+
+@font-face {
+	font-family: "MelodramaVariable";
+	src: url("../public/fonts/Melodrama-Variable.woff2");
+}
+
+@font-face {
+	font-family: "BritneyBold";
+	src: url("../public/fonts/Britney-Bold.woff2");
 }
 
 /* .about-container {

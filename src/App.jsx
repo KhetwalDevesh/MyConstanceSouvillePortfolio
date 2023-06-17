@@ -90,7 +90,7 @@ function App() {
 		<div id="top-of-page" className="p-[21px] pb-24 bg-[#b2b2a8] top-0 h-full ">
 			<div className="bg-[#c1c0b6] rounded-[45px] h-full ">
 				<header className="flex flex-col gap-2 p-[3vh] pt-[4vh] mb-[calc(16vh + 10px)] w-500:pb-0 w-380:pt-[3vh] w-380:px-5">
-					<div className="my-name overflow-hidden h-fit py-3 w-380:text-[1.8rem]  w-470:text-[2.2rem] w-500:text-[2.8rem] w-600:text-[3.2rem] w-800:text-[4rem] w-1050:text-[5.5rem] w-1200:text-[7rem] w-1500:text-[8rem] w-1670:text-[9rem] m-0 text-[11rem] text-[#3f3b37] font-neueHaasDisplayRoman  leading-[.7] flex justify-around ">
+					<div className="my-name overflow-hidden h-fit py-3 w-380:text-[1.8rem]  w-470:text-[2.2rem] w-500:text-[2.8rem] w-600:text-[3.2rem] w-800:text-[4rem] w-1050:text-[5.5rem] w-1200:text-[7rem] w-1500:text-[8rem] w-1670:text-[9rem] m-0 text-[11rem] text-[#3f3b37] font-BlackOpsOne  leading-[.7] flex justify-around ">
 						<span className="animate-text">Devesh</span>{" "}
 						<span className="animate-text">Khetwal</span>
 					</div>
@@ -202,20 +202,20 @@ function App() {
 							<a
 								href="https://dirt-shop-ecom.netlify.app/"
 								target="_blank"
-								onMouseEnter={() => {
-									const projectClass1 = document.querySelector(".project-1");
-									const projectImage1 =
-										document.querySelector(".project-1-image");
-									projectClass1.style.opacity = 0;
-									projectImage1.style.transform = "scale(1.2)";
-								}}
-								onMouseLeave={() => {
-									const projectClass1 = document.querySelector(".project-1");
-									const projectImage1 =
-										document.querySelector(".project-1-image");
-									projectClass1.style.opacity = 1;
-									projectImage1.style.transform = "none";
-								}}
+								// onMouseEnter={() => {
+								// 	const projectClass1 = document.querySelector(".project-1");
+								// 	const projectImage1 =
+								// 		document.querySelector(".project-1-image");
+								// 	projectClass1.style.opacity = 0;
+								// 	projectImage1.style.transform = "scale(1.2)";
+								// }}
+								// onMouseLeave={() => {
+								// 	const projectClass1 = document.querySelector(".project-1");
+								// 	const projectImage1 =
+								// 		document.querySelector(".project-1-image");
+								// 	projectClass1.style.opacity = 1;
+								// 	projectImage1.style.transform = "none";
+								// }}
 								className="absolute project project-1 w-[100%] z-10 w-380:h-[6rem] w-380:rounded-br-[1.5rem] w-800:h-[8rem]  w-1050:h-[25rem] w-1200:h-[30rem]  p-[20px]    rounded-br-[2.8rem] bg-[#3f3b37] h-[37.5rem] flex flex-col justify-end">
 								<div className="flex justify-between text-[40px] w-380:text-[16px] w-1200:text-[30px] w-800:text-[20px]">
 									<div className="text-[#fbefdf] font-ppNeueMontrealMedium ">
