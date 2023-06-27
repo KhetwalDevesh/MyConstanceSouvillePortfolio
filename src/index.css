@@ -160,3 +160,16 @@ span {
 .about {
 	transform: translateY(300px);
 }
+
+.text-reveal-dirty-merch-twist-span-parent {
+	transform-style: preserve-3d;
+	perspective: 1000px;
+}
+
+.text-reveal-dirty-merch-twist-span {
+	will-change: transform;
+	transform-style: preserve-3d;
+	transform-origin: bottom;
+	display: inline-block;
+	transform: translate3d(0%, 120%, 0) rotateX(90deg);
+}

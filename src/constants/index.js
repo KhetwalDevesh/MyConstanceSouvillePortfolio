@@ -1,0 +1,67 @@
+export const PROJECTS = [
+	{
+		title: "Dirty-Merch",
+		images: [
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325691/samples/devesh/dirty-merch/sixth_rrwmws.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325689/samples/devesh/dirty-merch/template_yzqs9t.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325688/samples/devesh/dirty-merch/details_xdxpgv.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325687/samples/devesh/dirty-merch/fourth_cwjp8o.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325687/samples/devesh/dirty-merch/seo_n0wo81.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325690/samples/devesh/dirty-merch/third_aj1iqn.png",
+		],
+		url: "",
+		prefix: "first",
+	},
+	{
+		title: "Twitter-Clone",
+		images: [
+			"https://res.cloudinary.com/dikpmkuiw/image/upload/v1687606154/twitter-clone-collage_tukxjh.png",
+			"https://res.cloudinary.com/dikpmkuiw/image/upload/v1687607712/twitter-clone-image1_meh1n3.png",
+			"https://res.cloudinary.com/dikpmkuiw/image/upload/v1687617585/twitter-clone-notification-img_qif83g.png",
+			"https://res.cloudinary.com/dikpmkuiw/image/upload/v1687606656/Screenshot_2023-06-24_094423_vvib05.png",
+			"https://res.cloudinary.com/dikpmkuiw/image/upload/v1687765175/speedtest-twitter-clone_odnqbc.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325690/samples/devesh/dirty-merch/third_aj1iqn.png",
+		],
+		url: "",
+		prefix: "second",
+	},
+	{
+		title: "Tuscany",
+		images: [
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325691/samples/devesh/dirty-merch/sixth_rrwmws.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325689/samples/devesh/dirty-merch/template_yzqs9t.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325688/samples/devesh/dirty-merch/details_xdxpgv.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325687/samples/devesh/dirty-merch/fourth_cwjp8o.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325687/samples/devesh/dirty-merch/seo_n0wo81.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325690/samples/devesh/dirty-merch/third_aj1iqn.png",
+		],
+		url: "",
+		prefix: "third",
+	},
+	{
+		title: "Raws",
+		images: [
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325691/samples/devesh/dirty-merch/sixth_rrwmws.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325689/samples/devesh/dirty-merch/template_yzqs9t.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325688/samples/devesh/dirty-merch/details_xdxpgv.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325687/samples/devesh/dirty-merch/fourth_cwjp8o.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325687/samples/devesh/dirty-merch/seo_n0wo81.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325690/samples/devesh/dirty-merch/third_aj1iqn.png",
+		],
+		url: "",
+		prefix: "fourth",
+	},
+	{
+		title: "Samsung",
+		images: [
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325691/samples/devesh/dirty-merch/sixth_rrwmws.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325689/samples/devesh/dirty-merch/template_yzqs9t.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325688/samples/devesh/dirty-merch/details_xdxpgv.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325687/samples/devesh/dirty-merch/fourth_cwjp8o.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325687/samples/devesh/dirty-merch/seo_n0wo81.png",
+			"https://res.cloudinary.com/dbspz5tmg/image/upload/v1687325690/samples/devesh/dirty-merch/third_aj1iqn.png",
+		],
+		url: "",
+		prefix: "fifth",
+	},
+];
